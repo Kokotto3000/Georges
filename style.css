@@ -83,8 +83,7 @@ html{
 }  
 
 #eye{
-    
-    animation: blink 2000ms infinite 100ms alternate both; 
+    animation: blink 2000ms infinite 100ms alternate both;
 }
 
 @keyframes blink {
