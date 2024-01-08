@@ -11,21 +11,30 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh
+}
+
 .georges{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    position: relative;
+    height: 300px;
+    width: 500px;
 }
 
 .georges svg{
-    width: 25%;
+    width: 50%;
     animation: balade 3000ms linear 100ms infinite normal both running;
 }
 
 .georges svg:hover{
-    animation: balade paused;
+    animation-play-state: paused;
 }
 
 @keyframes balade {
@@ -109,3 +118,9 @@ html{
         ry: 0.5px;
     }
 }
+
+/*#georges-shadow{
+    opacity: 0.2;
+    transform: rotateX(85deg);
+    width: 100%;
+}*/
